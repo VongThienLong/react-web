@@ -1,0 +1,51 @@
+.app__header {
+    background-color: var(--color-black);
+}
+
+.app__info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 6rem;
+}
+
+.app__header-h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 110px;
+    font-size: 70px;
+}
+
+@media screen and (min-width: 2000px){
+    .app__header-h1{
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    
+
+    .app__info{
+        left: 30%;
+        flex-wrap: wrap;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .app__info{
+        padding: 2rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .app__info{
+        padding: 0 2rem;
+    }
+    
+}
