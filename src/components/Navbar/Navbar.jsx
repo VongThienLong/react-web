@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 
 import images from '../../constants/images';
@@ -16,17 +17,16 @@ const Navbar = () => {
     </div>
 
     <ul className='app__navBar-links'>
-      <li className='p__opensans'><a href="#home">Home</a></li>
-      <li className='p__opensans'><a href="#about">About</a></li>
-      <li className='p__opensans'><a href="#menu">Menu</a></li>
-      <li className='p__opensans'><a href="#awards">Awards</a></li>
-      <li className='p__opensans'><a href="#contact">Contact</a></li>
+      <li className='p__opensans'><Link to="/">Home</Link></li>
+      <li className='p__opensans'><Link to="/about">About</Link></li>
+      <li className='p__opensans'><Link to="/menu">Menu</Link></li>
+      <li className='p__opensans'><Link to="/contact">Contact</Link></li>
     </ul>
 
     <div className='app__navBar-login'>
-      <a href="#login" className='p__opensans'>Log In / Register</a>
+      <Link to="/login" className='p__opensans'>Log In / Register</Link>
       <div />
-      <a href="/" className='p__opensans'>Book a Table</a>
+      <Link to="/booking" className='p__opensans'>Book A Table</Link>
     </div>
 
     <div className='app__navBar-smallscreen'>
@@ -36,17 +36,15 @@ const Navbar = () => {
         <div className='app__navBar-smallscreen_overlay flex__center slide-bottom'>
         <MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={() => {setToggleMenu(false)}}/>
         <ul className='app__navBar-smallscreen_links'>
-          <li className='p__opensans'><a href="#home">Home</a></li>
-          <li className='p__opensans'><a href="#about">About</a></li>
-          <li className='p__opensans'><a href="#menu">Menu</a></li>
-          <li className='p__opensans'><a href="#awards">Awards</a></li>
-          <li className='p__opensans'><a href="#contact">Contact</a></li>
-          <li className='p__opensans'><a href="">Log In / Register </a></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/">Home</Link></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/about">About</Link></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/menu">Menu</Link></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/contact">Contact</Link></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/login">Login / Register</Link></li>
+          <li className='p__opensans' onClick={() => setToggleMenu(false)}><Link to="/booking">Make A Reservation</Link></li>
         </ul> 
       </div>
       )}
-      
-      
     </div>
   </nav>
   );

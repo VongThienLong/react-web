@@ -1,0 +1,64 @@
+.app__hero{
+    background: url('../../assets/bg2.png');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    animation: fade-in 1s ease;
+}
+
+.app__hero_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    border: 2px solid var(--color-golden);
+}
+
+.app__hero-h1 {
+    margin: 1rem;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 110px;
+    font-size: 70px;
+}
+
+@media screen and (min-width: 2000px){
+    .app__hero-h1{
+        font-size: 150px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+
+    .app__hero_text{
+        width: max-content;
+    }
+
+    .app__hero-h1{
+        font-size: 66px;
+        line-height: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .app__hero-h1{
+        margin: 0;
+        font-size: 2.3rem;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .app__hero-h1{
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+    
+}

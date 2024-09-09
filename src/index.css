@@ -50,3 +50,12 @@ a {
             transform: translateY(0);
   }
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 90%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

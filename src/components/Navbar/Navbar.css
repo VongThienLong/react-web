@@ -101,9 +101,10 @@
     color: var(--color-white);
 }
 
-.app__navBar-smallscreen_links li:last-child{
-    margin: 5rem;
+.app__navBar-smallscreen_links li:nth-last-child(2), .app__navBar-smallscreen_links li:nth-last-child(1){
+    margin-top: 1rem;
     color: var(--color-white);
+    padding-bottom: 0.5rem;
 }
 
 .app__navBar-smallscreen_links li:last-child:hover{

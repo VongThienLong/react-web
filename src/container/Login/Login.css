@@ -1,0 +1,92 @@
+.app__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app__login-container {
+    background: #fff;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.5s ease-in-out;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 200%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.app__login-container.login .form-wrapper {
+    transform: translateX(0);
+}
+
+.app__login-container.register .form-wrapper {
+    transform: translateX(-50%);
+}
+
+.app__login-form, .app__register-form {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.app__login-container h2 {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.app__login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__login-container input {
+    margin-bottom: 1rem;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.app__login-container button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 1rem 0 ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app__login-container p {
+    margin-top: 1rem;
+    text-align: end;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.app__login-form form label,
+.app__register-form form label {
+    color: var(--color-black);
+    font-size: 1.25em;
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1150px){
+    .app__login-container {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .app__login-container {
+        width: 100%;
+    }
+}

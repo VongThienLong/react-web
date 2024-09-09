@@ -1,0 +1,101 @@
+.app__booking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__booking-form {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.app__booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+.app__booking-form button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 1rem 0 ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom__button:hover {
+    background-color: #555;
+}
+
+
+.app__booking-form form label {
+    color: var(--color-black);
+    font-size: 1.25em;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1150px){
+    .app__booking {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .form-inline {
+        flex-direction: column;
+    }
+    .app__booking-form {
+        padding: 1rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+    .form-group label {
+        font-size: .75em;
+    }
+    .app__booking-form button {
+        padding: 0.5rem;
+    }
+    
+}

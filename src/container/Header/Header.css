@@ -26,13 +26,13 @@
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1200px){
     
 
     .app__info{
         left: 30%;
         flex-wrap: wrap;
-        max-width: 60%;
+        max-width: 60%!important;
     }
 }
 

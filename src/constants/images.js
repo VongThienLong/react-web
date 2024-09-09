@@ -21,6 +21,10 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import banner from '../assets/banner.png';
+import about1 from '../assets/about1.png';
+import about2 from '../assets/about2.png';
+import about3 from '../assets/about3.png';
+import booking from '../assets/booking.png';
 
 export default {
   bg,
@@ -46,4 +50,8 @@ export default {
   quote,
   gericht,
   banner,
+  about1,
+  about2,
+  about3,
+  booking
 };

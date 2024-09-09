@@ -56,6 +56,34 @@ const cocktails = [
   },
 ];
 
+const foods = [
+  {
+    title: 'Beef Wellington',
+    price: '$56',
+    tags: 'Beef | Mushroom | Puff pastry',
+  },
+  {
+    title: 'Fish & Chips',
+    price: '$59',
+    tags: 'Fish | Chips | Tartar sauce',
+  },
+  {
+    title: 'Bangers & Mash',
+    price: '$44',
+    tags: 'Sausage | Mash | Gravy',
+  },
+  {
+    title: 'Shepherd’s Pie',
+    price: '$31',
+    tags: 'Lamb | Mashed potato | Cheese',
+  },
+  {
+    title: 'Chicken Tikka Masala',
+    price: '$26',
+    tags: 'Chicken | Curry | Rice',
+  },
+];
+
 const awards = [
   {
     imgUrl: images.award02,
@@ -79,4 +107,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { wines, cocktails, foods, awards };
