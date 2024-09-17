@@ -1,15 +1,22 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 import { data } from '../../constants'
 import { MenuItem, SubHeading } from '../../components'
 import './Menu.css'
 
 const Menu = () => (
-    <div className='app__menu app__wrapper app__bg section__padding'>
-        <div className='app__menu-title'>
-            <SubHeading title={"Explore our delicious offerings"} />
+    <div className='app__menu app__wrapper app__bg section__padding' >
+        <motion.div
+            className='app__menu-title'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{amount: 0.2 }}
+            >
+
+            <SubHeading title="Explore our delicious offerings" />
             <h1 className='headtext__cormorant'>Today's Menu</h1>
-        </div>
+        </motion.div>
         
         <div className='app__menu-content'>
             <div className='app__menu-content_wines'>
